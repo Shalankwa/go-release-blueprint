@@ -8,7 +8,8 @@ release-clean:
 
 repeat:
 	go mod init $(PROJECT_NAME)
-	go get github.com/spf13/cobra
+	go install github.com/spf13/cobra-cli@latest
+	cobra-cli init
 	go install github.com/goreleaser/goreleaser/v2@latest
 	goreleaser init
-	goreleaser release --snapshot
+	goreleaser release --snapshot --clean
