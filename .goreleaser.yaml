@@ -1,0 +1,45 @@
+# Make sure to check the documentation at https://goreleaser.com
+
+version: 2
+
+builds:
+  - env:
+      - CGO_ENABLED=0
+    goos:
+      - linux
+      - windows
+      - darwin
+    goarch:
+      - amd64
+      - arm64
+
+nfpms:
+  - package_name: go-release-buildprint
+    homepage: https://github.com/shalankwa/go-release-buildprint
+    description: |-
+      Simple example project for a go-cli application and releases
+    formats:
+      - deb
+      - rpm
+    maintainer: Shalanka
+
+changelog:
+  sort: asc
+  filters:
+    exclude:
+      - "^docs:"
+      - "^test:"
+
+release:
+  prerelease: auto
+  footer: >-
+
+    ---
+
+    Released by [GoReleaser](https://github.com/goreleaser/goreleaser).
+
+universal_binaries:
+  - replace: true
+
+checksum:
+  name_template: 'checksums.txt'
