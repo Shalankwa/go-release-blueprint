@@ -4,9 +4,9 @@ An example project to demonstrate how to build/release and publish Go projects.
 
 ### Dependencies
 - Golang
-- This project uses (goreleaser)[https://goreleaser.com/] to build and release packages.
+- This project uses [goreleaser](https://goreleaser.com/) to build and release packages.
 - Github actions are used to automate the build and release process during tag creation.
-- (Cobra)[https://github.com/spf13/cobra] is used to create to kitstart a simple CLI application.
+- [Cobra](https://github.com/spf13/cobra) is used to create to kitstart a simple CLI application.
 
 ### Reproduction Setups
 A makefile is present to provide an example of how to recreate this project from scratch.
@@ -15,7 +15,7 @@ A makefile is present to provide an example of how to recreate this project from
 make repeat
 ```
 
-2. Copy the workflow example in (goreleaser docs)[https://goreleaser.com/ci/actions/] to /.github/workflows/release.yml
+2. Copy the workflow example in [goreleaser docs](https://goreleaser.com/ci/actions/) to /.github/workflows/release.yml
 
 ## Triggering a release
 The github actions workflow is set to trigger on a new tag creation.
