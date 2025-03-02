@@ -22,6 +22,7 @@ The github actions workflow is set to trigger on a new tag creation.
 1. Create a new tag
 ```bash
 git tag -a v0.0.1 -m "First release"
+git push --tags
 ```
 
 ## Installation of packages
