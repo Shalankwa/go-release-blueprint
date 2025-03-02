@@ -11,7 +11,7 @@ import (
 
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
-	Use:   "go-release-buildprint [message]",
+	Use:   "go-release-blueprint [message]",
 	Short: "Simple example project for a go-cli application and releases",
 	Long:  ``,
 	Args:  cobra.MinimumNArgs(1),
@@ -35,7 +35,7 @@ func init() {
 	// Cobra supports persistent flags, which, if defined here,
 	// will be global for your application.
 
-	// rootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "config file (default is $HOME/.go-release-buildprint.yaml)")
+	// rootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "config file (default is $HOME/.go-release-blueprint.yaml)")
 
 	// Cobra also supports local flags, which will only run
 	// when this action is called directly.

@@ -14,8 +14,8 @@ builds:
       - arm64
 
 nfpms:
-  - package_name: go-release-buildprint
-    homepage: https://github.com/shalankwa/go-release-buildprint
+  - package_name: go-release-blueprint
+    homepage: https://github.com/shalankwa/go-release-blueprint
     description: |-
       Simple example project for a go-cli application and releases
     formats:
