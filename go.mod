@@ -1,4 +1,4 @@
-module github.com/Shalankwa/go-release-blueprint
+module github.com/shalankwa/go-release-blueprint
 
 go 1.23.5
 

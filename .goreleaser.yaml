@@ -15,7 +15,7 @@ builds:
 
 nfpms:
   - package_name: go-release-blueprint
-    homepage: https://github.com/Shalankwa/go-release-blueprint
+    homepage: https://github.com/shalankwa/go-release-blueprint
     description: |-
       Simple example project for a go-cli application and releases
     formats:
