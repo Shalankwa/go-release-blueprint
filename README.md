@@ -45,6 +45,33 @@ sudo dpkg -i go-release-blueprint_0.0.1_linux_amd64.deb
 go-release-blueprint
 ```
 
+### Windows install [VIA Admin Powershell]
+
+1. Download the .exe file from the release page
+```powershell
+cd ~\Downloads\
+Invoke-Webrequest -Uri "https://github.com/shalankwa/go-release-blueprint/releases/download/v0.0.3/go-release-blueprint_0.0.3_windows_amd64.zip" -OutFile "go-release-blueprint_0.0.3_windows_amd64.zip"
+```
+
+2. Unzip the file
+```powershell
+Expand-Archive -Path .\go-release-blueprint_0.0.3_windows_amd64.zip -DestinationPath 'C:\Program Files\go-release-blueprint'
+```
+
+3. Run the command
+```powershell
+cd 'C:\Program Files\go-release-blueprint\'
+.\go-release-blueprint --help
+```
+
+4. [Optional] Add installation path to PATH
+```powershell
+$env:BACKUPPATH = [Environment]::GetEnvironmentVariable("Path", "Machine")
+$env:NEWPATH = [Environment]::GetEnvironmentVariable("Path", "Machine")
+$env:NEWPATH += ";C:\Program Files\go-release-blueprint"
+[Environment]::SetEnvironmentVariable("Path", $env:NEWPATH, "Machine")
+```
+
 # Resources
 - Based off: https://www.youtube.com/watch?v=IOVBSVox1lM
 - Learn more about goreleaser: https://goreleaser.com/
