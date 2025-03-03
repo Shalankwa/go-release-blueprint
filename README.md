@@ -64,12 +64,13 @@ cd 'C:\Program Files\go-release-blueprint\'
 .\go-release-blueprint --help
 ```
 
-4. [Optional] Add installation path to PATH
+4. [Optional] Add installation path to windows $enc:PATH
 ```powershell
 $env:BACKUPPATH = [Environment]::GetEnvironmentVariable("Path", "Machine")
 $env:NEWPATH = [Environment]::GetEnvironmentVariable("Path", "Machine")
 $env:NEWPATH += ";C:\Program Files\go-release-blueprint"
 [Environment]::SetEnvironmentVariable("Path", $env:NEWPATH, "Machine")
+Update-SessionEnvironment
 ```
 
 # Resources
