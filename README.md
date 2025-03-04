@@ -34,7 +34,7 @@ go install github.com/shalankwa/go-release-blueprint@latest
 ### Example installation from .deb release
 1. Download the .deb file from the release page
 ```bash
-curl -O https://github.com/shalankwa/go-release-blueprint/releases/download/v0.0.1/go-release-blueprint_0.0.1_linux_amd64.deb
+curl -sfLO https://github.com/shalankwa/go-release-blueprint/releases/download/v0.0.1/go-release-blueprint_0.0.1_linux_amd64.deb
 ```
 2. Install the .deb file
 ```bash
