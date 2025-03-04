@@ -26,6 +26,11 @@ git push --tags
 ```
 
 ## Installation of packages
+### Install with homebrew
+```bash
+brew install shalankwa/homebrew-shalankwa/go-release-blueprint
+```
+
 ### Example Install using go
 ```bash
 go install github.com/shalankwa/go-release-blueprint@latest
