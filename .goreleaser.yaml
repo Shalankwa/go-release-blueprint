@@ -28,6 +28,17 @@ nfpms:
       - rpm
     maintainer: Shalanka
 
+brews:
+  - name: go-release-blueprint
+    repository:
+      owner: shalankwa
+      name: homebrew-shalankwa
+      token: "{{ .Env.HOMEBREW_TAP_GITHUB_TOKEN }}"
+    homepage: https://github.com/shalankwa/homebrew-shalankwa
+    commit_author:
+      name: shalankwa
+      email: shalankwa@gmail.com
+
 changelog:
   sort: asc
   filters:
